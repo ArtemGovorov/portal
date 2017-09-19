@@ -9,14 +9,12 @@ var rules = webpackConfig.module.rules.filter(function (rule) {
 });
 
 webpackConfig.module.rules = rules;
-webpackConfig.module.rules.push({ test: /\.ts$/, loader: 'angular2-template-loader', exclude: /node_modules/ });
+webpackConfig.module.rules.push({ test: /\.js$/, loader: 'angular2-template-loader', exclude: /node_modules/ });
 webpackConfig.module.rules.push({ test: /\.html$/, loader: 'html-loader' });
 
 webpackConfig.entryPatterns = [
     'lib/di.core/di.core.global.js',
-    'lib/di.core.test/utility/testHelper.js',
-    'src/app/**/*spec.js',
-    'src/app/**/*spec.ts'
+    'src/app/**/*spec.js'
 ];
 
 var wallabyPostprocessor = wallabyWebpack(webpackConfig);
