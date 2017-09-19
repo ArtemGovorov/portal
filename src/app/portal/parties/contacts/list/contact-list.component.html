@@ -1,0 +1,49 @@
+<section class="section-content">
+    <div class="row">
+        <section class="table">
+            <header class="section-header bottom-padding-10px">
+                <div class="left">
+                    <h2 class="dynamic-table-title" di-translate="EINVOICING.PORTAL.PARTIES.CONTACTS.LIST.TITLE"></h2>
+                </div>
+                <div class="filters right">
+                    <div>
+                        <di-document-state-selector
+                            [image]="'sort'"
+                            [items]="$ctrl.sortOptions"
+                            [selected-state]="$ctrl.selectedSortItem"
+                            (on-changed-state)="$ctrl.sortByChanged($event)">
+                        </di-document-state-selector>
+                    </div>
+                </div>
+            </header>
+            <section class="section-content">
+                <div class=table-wrap>
+                    <div class="table-wrap-content">
+                        <di-data-table
+                            keep-watch="true"
+                            items="$ctrl.contacts"
+                            options="$ctrl.tableOptions"
+                            items-controller="$ctrl"
+                            row-double-click="$ctrl.viewContact">
+                            <di-data-table-left-footer
+                                ng-if='!$ctrl.readonly'>
+                                <a
+                                    href="#"
+                                    ng-click="$ctrl.addContact()"
+                                    class="link-iconed">
+                                    <di-image
+                                        image="plus"
+                                        image-colour="button">
+                                    </di-image>
+                                    <span
+                                        class="label"
+                                        di-translate>EINVOICING.PORTAL.PARTIES.CONTACTS.LIST.ADD_NEW</span>
+                                </a>
+                            </di-data-table-left-footer>
+                        </di-data-table>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</section>

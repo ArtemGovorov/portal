@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E588BAD-5C6A-496D-8A84-6E878B6CACD1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Di.EInvoicing.Ui.Portal</RootNamespace>
+    <AssemblyName>Di.EInvoicing.Ui.Portal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>true</IISExpressUseClassicPipelineMode>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>2.4.2</TypeScriptToolsVersion>
+    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
+    <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".babelrc" />
+    <TypeScriptCompile Include="lib\di.core\spa\controls\modal\modal-base.controller.ts" />
+    <TypeScriptCompile Include="src\app\portal\parties\contacts\list\index.ts" />
+    <Content Include=".gitignore" />
+    <Content Include="karma.conf.js" />
+    <Content Include="lib\di.core\global\_namespace.js" />
+    <Content Include="lib\di.core\spa\controls\modal\modal-resource.controller.js" />
+    <Content Include="lib\di.core\spa\controls\modal\modal-resource.controller.spec.js" />
+    <Content Include="src\app\config.js" />
+    <Content Include="src\app\config.release.js">
+      <DependentUpon>config.js</DependentUpon>
+    </Content>
+    <Content Include="src\app\portal\parties\contacts\list\contact-list.component.html" />
+    <TypeScriptCompile Include="src\app\portal\parties\contacts\list\contact-list.component.ts" />
+    <TypeScriptCompile Include="src\app\portal\parties\contacts\list\contact-list.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\portal\parties\contacts\list\_loader.ts" />
+    <TypeScriptCompile Include="src\app\portal\parties\contacts\_loader.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-resource.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\es6-promise\es6-promise.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <Content Include="src\app\portal\parties\_loader.js" />
+    <Content Include="lib\di.core\spa\controls\modal\modalController.js" />
+    <Content Include="lib\di.core\spa\controls\modal\modal-window.service.js" />
+    <Content Include="lib\di.core\spa\controls\modal\_loader.js" />
+    <Content Include="lib\di.core\spa\controls\_loader.js" />
+    <Content Include="lib\di.core\spa\translation\diTranslateDirective.js" />
+    <Content Include="lib\di.core\spa\translation\diTranslateFilter.js" />
+    <Content Include="lib\di.core\spa\translation\diTranslateLink.js" />
+    <Content Include="lib\di.core\spa\translation\translator.js" />
+    <Content Include="lib\di.core\spa\translation\_loader.js" />
+    <Content Include="lib\di.core\spa\_loader.js" />
+    <Content Include="lib\di.core\di.core.spa.js" />
+    <Content Include="lib\di.core\di.core.global.js" />
+    <Content Include="lib\di.core\global\angular\snippetRegistrar.js" />
+    <Content Include="lib\di.core\global\angular\util.js" />
+    <Content Include="lib\di.core\global\angular\_main.js" />
+    <Content Include="lib\di.core\global\debug\debugger.js" />
+    <Content Include="lib\di.core\global\debug\_main.js" />
+    <Content Include="lib\di.core\global\event\jqueryEventSubscriber.js" />
+    <Content Include="lib\di.core\global\event\_main.js" />
+    <Content Include="lib\di.core\global\exception\guard.js" />
+    <Content Include="lib\di.core\global\exception\_main.js" />
+    <Content Include="lib\di.core\global\prototypeExtensions\arrayExtensions.js" />
+    <Content Include="lib\di.core\global\prototypeExtensions\_main.js" />
+    <Content Include="lib\di.core\global\utility\compatability.js" />
+    <Content Include="lib\di.core\global\utility\placeholders\arguments\map.js" />
+    <Content Include="lib\di.core\global\utility\placeholders\arguments\split.js" />
+    <Content Include="lib\di.core\global\utility\placeholders\arguments\_main.js" />
+    <Content Include="lib\di.core\global\utility\placeholders\extract.js" />
+    <Content Include="lib\di.core\global\utility\placeholders\replace.js" />
+    <Content Include="lib\di.core\global\utility\placeholders\_main.js" />
+    <Content Include="lib\di.core\global\utility\util.js" />
+    <Content Include="lib\di.core\global\utility\_main.js" />
+    <Content Include="lib\di.core\global\_main.js" />
+    <Content Include="test.bundle.js" />
+    <Content Include="update-browser.html" />
+    <Content Include="gulpfile.js" />
+    <Content Include="index.html" />
+    <Content Include="src\app\main.js" />
+    <Content Include="src\app\app.module.js" />
+    <Content Include="wallaby.config.js" />
+    <Content Include="wallaby.js" />
+    <Content Include="webpack.config.base.js" />
+    <Content Include="webpack.config.prod.js" />
+    <Content Include="webpack.config.test.js" />
+    <Content Include="webpack.config.dev.js" />
+    <Content Include="src\app\portal\_loader.js" />
+    <Content Include="src\app\_config.js" />
+    <Content Include="src\app\_run.js" />
+    <Content Include="src\app\_states.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="Di.EInvoicing.Ui.Portal.nuspec">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="tsconfig.json" />
+    <Content Include="packages.config" />
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56155</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58119/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.-->
+  <Target Name="BeforeBuild">
+    <TransformXml Source="Web.config" Transform="Web.Release.config" Destination="Web.config" Condition="'$(Configuration)' == 'Release'" />
+    <Copy SourceFiles="src\app\config.release.js" DestinationFiles="src\app\config.js" OverwriteReadOnlyFiles="true" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
+  <Import Project="..\packages\Microsoft.VisualStudio.SlowCheetah.3.0.61\build\Microsoft.VisualStudio.SlowCheetah.targets" Condition="Exists('..\packages\Microsoft.VisualStudio.SlowCheetah.3.0.61\build\Microsoft.VisualStudio.SlowCheetah.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.VisualStudio.SlowCheetah.3.0.61\build\Microsoft.VisualStudio.SlowCheetah.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.VisualStudio.SlowCheetah.3.0.61\build\Microsoft.VisualStudio.SlowCheetah.targets'))" />
+  </Target>
+  <!--
+  <Target Name="AfterBuild">
+  </Target> 
+  -->
+</Project>

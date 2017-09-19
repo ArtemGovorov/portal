@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Di.EInvoicing.Ui.Portal</id>
+        <version>0.0.1</version>
+        <authors>Data Interchange Plc</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Contains the website for the einvoicing SPA</description>
+    </metadata>
+    <files>
+        <file src="index.html" target="" />
+        <file src="update-browser.html" target="" />
+        <file src="web.config" target="" />
+        <file src="lib\**" target="lib\" />
+        <file src="src\favicon.png" target="src\" />
+        <file src="src\fonts\**" target="src\fonts" />
+        <file src="src\images\**" target="src\images" />
+        <file src="src\languages\**" target="src\languages" />
+        <file src="src\app\**\*.html" target="src\app\" />
+        <file src="src\app\config.js" target="src\app\" />
+        <file src="dist\vendor.bundle.js" target="dist\vendor.bundle.js" />
+        <file src="dist\app.bundle.js" target="dist\app.bundle.js" />
+        <file src="src\styles\**" target="src\styles" />
+    </files>
+</package> 

@@ -1,0 +1,29 @@
+﻿{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "pretty": true,
+    "stripInternal": true,
+    "noStrictGenericChecks": true,
+    "lib": [
+      "es5",
+      "es2015",
+      "dom",
+      "scripthost"
+    ],
+    "types": [ "jasmine" ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [ "src/app/**/*.ts" ],
+  "exclude": [
+    "lib/di.core/spa/**",
+    "node_modules/reflect-metadata/**",
+    "src/app/**/*spec.ts"
+  ]
+}

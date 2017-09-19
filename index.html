@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+    <head lang="en">
+        <base href="/" />
+        <meta charset="UTF-8">
+	    <meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title >Data Interchange | Digital Invoice</title>
+        <script type="text/javascript" src="lib/modernizr/modernizr.js"></script>
+	    <link rel="icon" type="img/png" href="src/favicon.png">
+	    <link rel="stylesheet" type="text/css" href="src/styles/main.css" />
+	    <link rel="stylesheet" type="text/css" href="src/styles/di/main.css" />
+    </head>
+<body>
+<div ui-view class="wrapper fluid-content">
+</div>
+<script type="text/javascript" src="dist/vendor.bundle.js"></script>
+<script type="text/javascript" src="dist/app.bundle.js"></script>
+<script>
+    'use strict';
+    var detectIeBrowserVersion = function() {
+        var ua = window.navigator.userAgent;
+
+        var msie = ua.indexOf('MSIE ');
+        if (msie > 0) {
+            return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+        }
+
+        return false;
+    };
+
+    var version = detectIeBrowserVersion();
+    if (version !== false && version <= 10) {
+        window.location.href = "update-browser.html";
+    }
+</script>
+</body>
+</html>

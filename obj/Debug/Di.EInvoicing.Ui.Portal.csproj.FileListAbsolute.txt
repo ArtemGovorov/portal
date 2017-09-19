@@ -1,0 +1,5 @@
+D:\TFS\EInvoicing\DEV\1.3.0\Source\EInvoicing\Di.EInvoicing.Ui.Portal\bin\Di.EInvoicing.Ui.Portal.dll.config
+D:\TFS\EInvoicing\DEV\1.3.0\Source\EInvoicing\Di.EInvoicing.Ui.Portal\bin\Di.EInvoicing.Ui.Portal.dll
+D:\TFS\EInvoicing\DEV\1.3.0\Source\EInvoicing\Di.EInvoicing.Ui.Portal\bin\Di.EInvoicing.Ui.Portal.pdb
+D:\TFS\EInvoicing\DEV\1.3.0\Source\EInvoicing\Di.EInvoicing.Ui.Portal\obj\Debug\Di.EInvoicing.Ui.Portal.dll
+D:\TFS\EInvoicing\DEV\1.3.0\Source\EInvoicing\Di.EInvoicing.Ui.Portal\obj\Debug\Di.EInvoicing.Ui.Portal.pdb

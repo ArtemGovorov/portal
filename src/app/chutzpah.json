@@ -1,0 +1,14 @@
+{
+  "Framework": "jasmine", 
+	"TestHarnessReferenceMode": "AMD",
+	"TestHarnessLocationMode": "SettingsFileAdjacent",
+	"TestFileTimeout": 60000,
+	"AMDBasePath": "../../app/src",
+	"References": [
+		{ "Path": "../../lib/requirejs/require.js" },
+		{ "Path": "main.test.js" }
+	],
+	"Tests": [
+		{"Path": "./", "Includes": [ "*.spec.js" ]}
+	]
+}
