@@ -112,7 +112,7 @@ export class ContactListComponent implements OnChanges {
         const options = {
             dataModel: model,
 			controller: "ResourceController",
-            templateUrl: 'src/app/portal/parties/contacts/contact.component.html',
+            //templateUrl: 'src/app/portal/parties/contacts/contact.component.html',
             onDataChanged: this.contactChanged,
             title: obj.isEditable ? 'Edit contact' : 'View contact',
             promptOnCancel: true
@@ -156,7 +156,7 @@ export class ContactListComponent implements OnChanges {
                 allowedTypes: typeOptions
             },
 			controller: "ResourceController",
-            templateUrl: 'src/app/portal/parties/contacts/contact.component.html',
+            //templateUrl: 'src/app/portal/parties/contacts/contact.component.html',
             onDataChanged: this.contactChanged,
             title: 'Add contact',
             promptOnCancel: true
